@@ -70,6 +70,6 @@
 
 ### [GPG Key](https://help.github.com/en/articles/generating-a-new-gpg-key)
 
-```
+```sh
   gpg --full-generate-key
 ```
