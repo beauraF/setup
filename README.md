@@ -10,7 +10,8 @@
   brew tap \
     heroku/brew \
     homebrew/cask \
-    homebrew/cask-versions
+    homebrew/cask-versions \
+    homebrew/services
 ```
 
 ```sh
@@ -49,7 +50,7 @@
 
 ### [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
-```
+```sh
   rm -f ~/.zcompdump; compinit
   chmod go-w '/usr/locale/share'  
 ```
@@ -67,6 +68,12 @@
   asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
   sh ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
   asdf install
+```
+
+### NGinx
+
+```sh
+  brew services start nginx
 ```
 
 ### [SSH Key](https://help.github.com/en/enterprise/2.16/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
