@@ -60,6 +60,15 @@
   bin/setup
 ```
 
+### [asdf](https://asdf-vm.com/)
+
+```sh
+  asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+  asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+  sh ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+  asdf install
+```
+
 ### [SSH Key](https://help.github.com/en/enterprise/2.16/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ```sh
