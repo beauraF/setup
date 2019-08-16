@@ -19,3 +19,5 @@
   autosquash = true
 [push]
   default = current
+[commit]
+	gpgsign = true
