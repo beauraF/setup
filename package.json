@@ -1,0 +1,28 @@
+{
+  "name": "setup",
+  "private": true,
+  "scripts": {
+    "prettier:check": "prettier --check '**/*.{yml,md}'",
+    "prettier:write": "prettier --write '**/*.{yml,md}'"
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{yml,md}": [
+      "npm run prettier:write",
+      "git add"
+    ],
+    "*.rb": [
+      "bundle exec rubocop --auto-correct --force-exclusion",
+      "git add"
+    ]
+  }
+}

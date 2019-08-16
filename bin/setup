@@ -1,0 +1,16 @@
+#! /usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'shellwords'
+
+SOURCES_PATH = File.expand_path('../sources', __dir__)
+
+Dir.glob("#{SOURCES_PATH}/**/**", File::FNM_DOTMATCH).each do |source|
+  next if File.directory?(source)
+
+  target = source.gsub(SOURCES_PATH, Dir.home)
+  args = [source, target].shelljoin
+
+  puts "#{target} -> #{source}"
+  system("mkdir -p #{File.dirname(target)} && ln -Fs #{args}")
+end
