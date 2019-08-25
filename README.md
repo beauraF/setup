@@ -74,7 +74,7 @@
 ### NGinx
 
 ```sh
-  brew services start nginx
+  sudo brew services start nginx
 ```
 
 ### [SSH Key](https://help.github.com/en/enterprise/2.16/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
