@@ -19,6 +19,7 @@
     asdf \
     git \
     heroku \
+    htop \
     nginx \
     postgresql \
     sqlite \
