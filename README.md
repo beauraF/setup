@@ -34,12 +34,15 @@
     dashlane \
     firefox-developer-edition \
     firefox-nightly \
+    google-backup-and-sync \
     google-chrome \
     google-chrome-canary \
     gpg-suite-no-mail \
     iterm2 \
     rubymine \
+    slack \
     spotify \
+    steam \
     tunnelblick
 ```
 
