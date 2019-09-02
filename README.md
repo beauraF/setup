@@ -10,6 +10,7 @@
   brew tap \
     heroku/brew \
     homebrew/cask \
+    homebrew/cask-fonts \
     homebrew/cask-versions \
     homebrew/services
 ```
@@ -34,6 +35,7 @@
     dashlane \
     firefox-developer-edition \
     firefox-nightly \
+    font-fira-code \
     google-backup-and-sync \
     google-chrome \
     google-chrome-canary \
