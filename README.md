@@ -41,7 +41,7 @@
     google-chrome-canary \
     gpg-suite-no-mail \
     iterm2 \
-    rubymine \
+    jetbrains-toolbox \
     slack \
     spotify \
     steam \
