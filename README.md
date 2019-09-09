@@ -58,7 +58,7 @@
 
 ```sh
   rm -f ~/.zcompdump; compinit
-  chmod go-w '/usr/locale/share'  
+  chmod go-w '/usr/local/share'  
 ```
 
 ### .dotfiles
