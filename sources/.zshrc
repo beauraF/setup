@@ -8,7 +8,15 @@ export ZSH="/Users/beauraf/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="avit"
+
+SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_DOCKER_SHOW="false"
+SPACESHIP_GIT_SHOW="false"
+SPACESHIP_KUBECONTEXT_SHOW="false"
+SPACESHIP_PACKAGE_SHOW="false"
+SPACESHIP_PROMPT_DEFAULT_PREFIX=""
+
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
