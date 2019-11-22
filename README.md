@@ -51,11 +51,18 @@
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+### [spaceship-prompt](https://ohmyz.sh/)
+
+```sh
+  git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" && \
+    ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+```
+
 ### [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
 ```sh
-  rm -f ~/.zcompdump; compinit
-  chmod go-w '/usr/local/share'  
+  rm -f ~/.zcompdump; compinit && \
+    chmod go-w '/usr/local/share'  
 ```
 
 ### .dotfiles
