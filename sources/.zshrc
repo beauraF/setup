@@ -111,5 +111,12 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# thefuck
+eval $(thefuck --alias)
+
+# zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
+
