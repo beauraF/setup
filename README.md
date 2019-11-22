@@ -7,12 +7,11 @@
 ```
 
 ```sh
-  brew tap \
-    heroku/brew \
-    homebrew/cask \
-    homebrew/cask-fonts \
-    homebrew/cask-versions \
-    homebrew/services
+  brew tap heroku/brew && \
+    brew tap homebrew/cask && \
+    brew tap homebrew/cask-fonts && \
+    brew tap homebrew/cask-versions && \
+    brew tap homebrew/services
 ```
 
 ```sh
