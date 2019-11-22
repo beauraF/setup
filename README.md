@@ -51,7 +51,7 @@
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-### [spaceship-prompt](https://ohmyz.sh/)
+### [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt)
 
 ```sh
   git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" && \
