@@ -21,7 +21,9 @@
     heroku \
     htop \
     nginx \
+    nodenv \
     postgresql \
+    rbenv \
     sqlite \
     thefuck \
     zsh \
