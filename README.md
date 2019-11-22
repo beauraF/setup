@@ -74,9 +74,9 @@
 ### [SSH Key](https://help.github.com/en/enterprise/2.16/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ```sh
-  ssh-keygen -t rsa -b 4096 -C 'beaurain.florent@gmail.com'
-  eval "$(ssh-agent -s)"
-  ssh-add -K ~/.ssh/id_rsa
+  ssh-keygen -t rsa -b 4096 -C 'beaurain.florent@gmail.com' && \
+    eval "$(ssh-agent -s)" && \
+    ssh-add -K ~/.ssh/id_rsa
 ```
 
 ### [GPG Key](https://help.github.com/en/articles/generating-a-new-gpg-key)
