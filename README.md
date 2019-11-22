@@ -33,22 +33,16 @@
 
 ```sh
   brew cask install \
-    atom \
     docker \
-    dashlane \
-    firefox-developer-edition \
-    firefox-nightly \
+    firefox \
     font-fira-code \
-    google-backup-and-sync \
     google-chrome \
-    google-chrome-canary \
     gpg-suite-no-mail \
     iterm2 \
-    jetbrains-toolbox \
-    slack \
     spotify \
-    steam \
-    tunnelblick
+    tunnelblick \
+    visual-studio-code \
+    1password
 ```
 
 ### [Oh-My-Zsh](https://ohmyz.sh/)
