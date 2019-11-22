@@ -111,6 +111,15 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# nodenv
+eval "$(nodenv init -)"
+
+# pyenv
+eval "$(pyenv init -)"
+
+# rbenv
+eval "$(rbenv init -)"
+
 # thefuck
 eval $(thefuck --alias)
 
