@@ -23,7 +23,9 @@
     nginx \
     postgresql \
     sqlite \
+    thefuck \
     zsh \
+    zsh-autosuggestions \
     zsh-completions
 ```
 
