@@ -11,5 +11,6 @@ Dir.glob("#{SOURCES_PATH}/**/**", File::FNM_DOTMATCH).each do |source|
   args = [source, target].shelljoin
 
   puts "#{target} -> #{source}"
+  %x(mkdir -p #{File.dirname(target)})
   %x(ln -Fs #{args})
 end
