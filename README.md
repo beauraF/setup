@@ -62,7 +62,7 @@
 
 ```sh
   rm -f ~/.zcompdump; compinit && \
-    chmod go-w '/usr/local/share'  
+    chmod go-w '/usr/local/share'
 ```
 
 ### NGinx
