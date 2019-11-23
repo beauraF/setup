@@ -37,6 +37,7 @@
     docker \
     firefox \
     font-fira-code \
+    github \
     google-chrome \
     gpg-suite-no-mail \
     iterm2 \
