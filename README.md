@@ -46,6 +46,13 @@ iTerm2 ▶ Preferences ▶ General ▶ Preferences ▶ Load preferences from a c
 ~/.iterm2
 ```
 
+### VSCode
+
+```sh
+code --install-extension \
+  EditorConfig.EditorConfig
+```
+
 ### [SSH Key](https://help.github.com/en/enterprise/2.16/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ```sh
