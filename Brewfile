@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 tap 'heroku/brew'
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
