@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/beauraf/.oh-my-zsh"
+export ZSH="/usr/local/share/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -77,8 +77,6 @@ ZSH_THEME="spaceship"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  asdf
-  bundler
   common-aliases
   git
 )
@@ -112,12 +110,15 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # nodenv
+export NODENV_ROOT="/usr/local/share"
 eval "$(nodenv init -)"
 
 # pyenv
+export PYENV_ROOT="/usr/local/share"
 eval "$(pyenv init -)"
 
 # rbenv
+export RBENV_ROOT="/usr/local/share"
 eval "$(rbenv init -)"
 
 # thefuck
@@ -128,4 +129,3 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
-

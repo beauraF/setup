@@ -1,5 +1,39 @@
 {
-    "editor.fontFamily": "FiraCode-Retina",
-    "editor.fontLigatures": true,
-    "files.autoSave": "afterDelay",
+  "editor.fontFamily": "FiraCode-Retina",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [120],
+  "explorer.openEditors.visible": 0,
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "ruby.format": "rubocop",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "ruby.useBundler": true,
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+  "workbench.settings.editor": "json",
+  "workbench.settings.useSplitJSON": true,
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

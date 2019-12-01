@@ -1,22 +1,22 @@
 ## setup MacOS workstation
 
-### .dotfiles
-
-```sh
-  bin/setup
-```
-
 ### [Homebrew](https://brew.sh/index_fr)
 
 ```sh
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && \
-    brew bundle install --global --no-lock
+    brew bundle install --no-lock
 ```
 
 ### [Oh-My-Zsh](https://ohmyz.sh/)
 
 ```sh
-  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  ZSH="/usr/local/share" sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+### .dotfiles
+
+```sh
+  bin/setup
 ```
 
 ### [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt)
@@ -33,24 +33,29 @@
     chmod go-w '/usr/local/share'
 ```
 
-### NGinx
+### [NGinx](https://www.nginx.com/)
 
 ```sh
   sudo brew services start nginx
 ```
 
-### iTerm2
+### [iTerm2](https://iterm2.com/)
 
 ```
-iTerm2 ▶ Preferences ▶ General ▶ Preferences ▶ Load preferences from a custom folder or URL
-~/.iterm2
+  iTerm2 ▶ Preferences ▶ General ▶ Preferences ▶ Load preferences from a custom folder or URL
+  ~/.iterm2
 ```
 
-### VSCode
+### [VSCode](https://code.visualstudio.com/)
 
 ```sh
-code --install-extension \
-  EditorConfig.EditorConfig
+  code --install-extension \
+    editorConfig.editorConfig \
+    ms-azuretools.vscode-docker \
+    monokai.theme-monokai-pro-vscode \
+    esbenp.prettier-vscode \
+    rebornix.ruby \
+    sianglim.slim
 ```
 
 ### [SSH Key](https://help.github.com/en/enterprise/2.16/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
