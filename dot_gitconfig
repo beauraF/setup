@@ -1,0 +1,28 @@
+[user]
+  name = Florent Beaurain
+  email = beaurain.florent@gmail.com
+[core]
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
+[color]
+  ui = true
+[branch]
+  autosetuprebase = always
+[fetch]
+  prune = true
+[pull]
+  ff = only
+  rebase = merges
+[merge]
+  ff = only
+[rebase]
+  autosquash = true
+[push]
+  default = current
+[commit]
+  gpgsign = true
+[filter "lfs"]
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
