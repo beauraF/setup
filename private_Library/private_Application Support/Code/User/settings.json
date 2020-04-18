@@ -1,0 +1,21 @@
+{
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [120],
+  "explorer.openEditors.visible": 0,
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "ruby.intellisense": "rubyLocate",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+  "workbench.settings.editor": "json",
+  "workbench.settings.useSplitJSON": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDragAndDrop": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 0
+}
