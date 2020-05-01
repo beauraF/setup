@@ -1,9 +1,11 @@
 {
   "editor.fontFamily": "JetBrains Mono",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  "editor.rulers": [120],
+  "editor.rulers": [
+    120
+  ],
   "explorer.openEditors.visible": 0,
   "editor.tabSize": 2,
   "files.autoSave": "onFocusChange",
