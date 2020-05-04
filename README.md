@@ -1,17 +1,48 @@
 ## setup MacOS workstation
 
-### [SSH Key](https://help.github.com/en/enterprise/2.16/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-
-```sh
-  ssh-keygen -t rsa -b 4096 -C 'beaurain.florent@gmail.com' && \
-    eval "$(ssh-agent -s)" && \
-    ssh-add -K ~/.ssh/id_rsa
-```
-
 ### [Homebrew](https://brew.sh/index_fr)
 
 ```sh
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+### 1password
+
+```sh
+  brew cask install 1password-cli && \
+    eval $(op signin my.1password.com beaurain.florent@gmail.com --shorthand beaurain.florent
+```
+
+### SSH Key
+
+```sh
+  op get document 7bjb3k4yfndydd3wqjtlf26lve > ~/.ssh/id_rsa && \
+    op get document x24ofo3iw5eypnacl7yiqvjuiq > ~/.ssh/id_rsa.pub && \
+    chmod 600 ~/.ssh/id_rsa && \
+    chmod 644 ~/.ssh/id_rsa.pub
+    eval "$(ssh-agent -s)" && \
+    ssh-add -K ~/.ssh/id_rsa
+```
+
+### PGP Key
+
+```sh
+  brew cask install gpg-suite-no-mail && \
+    op get document l7b5wtjbhbe67i2ypxrvy45tnu | gpg --import && \
+    op get document 4wq4tsl3jjf2fawu7pzh3k22zq | gpg --import
+```
+
+### [chezmoi](https://github.com/twpayne/chezmoi)
+
+```sh
+  brew install twpayne/taps/chezmoi && \
+    chezmoi init https://github.com/beauraF/setup && \
+```
+
+### Brewfile
+
+```sh
+  brew bundle install --no-lock --file $(chezmoi source-path)/Brewfile
 ```
 
 ### [Oh-My-Zsh](https://ohmyz.sh/)
@@ -27,13 +58,10 @@
     ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
-### [Chezmoi](https://github.com/twpayne/chezmoi)
+### chezmoi apply
 
 ```sh
-  brew install twpayne/taps/chezmoi && \
-    chezmoi init https://github.com/beauraF/setup && \
-    brew bundle install --no-lock --file $(chezmoi source-path)/Brewfile && \
-    chezmoi apply -v
+  chezmoi apply -v
 ```
 
 ### [zsh-completions](https://github.com/zsh-users/zsh-completions)
@@ -57,10 +85,4 @@
     code --install-extension esbenp.prettier-vscode && \
     code --install-extension rebornix.ruby && \
     code --install-extension sianglim.slim
-```
-
-### [GPG Key](https://help.github.com/en/articles/generating-a-new-gpg-key)
-
-```sh
-  gpg --full-generate-key
 ```
