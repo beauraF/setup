@@ -1,4 +1,4 @@
-## setup MacOS workstation
+## Setup MacOS workstation 🚀
 
 ### [Homebrew](https://brew.sh/index_fr)
 
