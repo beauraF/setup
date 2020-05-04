@@ -10,7 +10,7 @@
 
 ```sh
   brew cask install 1password-cli && \
-    eval $(op signin my.1password.com beaurain.florent@gmail.com --shorthand beaurain.florent
+    eval $(op signin my.1password.com beaurain.florent@gmail.com --shorthand beaurain-florent
 ```
 
 ### SSH Key
