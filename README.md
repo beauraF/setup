@@ -6,7 +6,7 @@
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### 1password
+### [1password](https://1password.com/)
 
 ```sh
   brew cask install 1password-cli && \
@@ -39,7 +39,7 @@
     chezmoi init https://github.com/beauraF/setup && \
 ```
 
-### Brewfile
+### [Brewfile](https://github.com/Homebrew/homebrew-bundle/)
 
 ```sh
   brew bundle install --no-lock --file $(chezmoi source-path)/Brewfile
@@ -64,7 +64,7 @@
   chezmoi apply -v
 ```
 
-### [zsh-completions](https://github.com/zsh-users/zsh-completions)
+### [zsh-completions](https://github.com/zsh-users/zsh-completions/)
 
 ```sh
   rm -f ~/.zcompdump; compinit
