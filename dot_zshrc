@@ -124,9 +124,6 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY="YES"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 eval "$(rbenv init -)"
 
-# thefuck
-eval $(thefuck --alias)
-
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
