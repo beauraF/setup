@@ -10,18 +10,20 @@
 
 ```sh
   brew cask install 1password-cli && \
-    eval $(op signin my.1password.com beaurain.florent@gmail.com --shorthand beaurain-florent
+    eval $(op signin my.1password.com beaurain.florent@gmail.com --shorthand beaurain_florent)
 ```
 
 ### SSH Key
 
 ```sh
-  op get document 7bjb3k4yfndydd3wqjtlf26lve > ~/.ssh/id_rsa && \
-    op get document x24ofo3iw5eypnacl7yiqvjuiq > ~/.ssh/id_rsa.pub && \
+  mkdir ~/.ssh
+    chmod 700 ~/.ssh && \
+    op get document 7bjb3k4yfndydd3wqjtlf26lve > ~/.ssh/id_rsa && \
     chmod 600 ~/.ssh/id_rsa && \
+    op get document x24ofo3iw5eypnacl7yiqvjuiq > ~/.ssh/id_rsa.pub && \
     chmod 644 ~/.ssh/id_rsa.pub
     eval "$(ssh-agent -s)" && \
-    ssh-add -K ~/.ssh/id_rsa
+    ssh-add -K ~/.ssh/id_rsas
 ```
 
 ### PGP Key
@@ -36,7 +38,7 @@
 
 ```sh
   brew install twpayne/taps/chezmoi && \
-    chezmoi init https://github.com/beauraF/setup && \
+    chezmoi init git@github.com:beauraF/setup.git
 ```
 
 ### [Brewfile](https://github.com/Homebrew/homebrew-bundle/)
@@ -74,15 +76,4 @@
 
 ```sh
   sudo brew services start nginx
-```
-
-### [VSCode](https://code.visualstudio.com/)
-
-```sh
-  code --install-extension editorConfig.editorConfig && \
-    code --install-extension ms-azuretools.vscode-docker && \
-    code --install-extension monokai.theme-monokai-pro-vscode && \
-    code --install-extension esbenp.prettier-vscode && \
-    code --install-extension rebornix.ruby && \
-    code --install-extension sianglim.slim
 ```
