@@ -3,7 +3,7 @@
 ### [Homebrew](https://brew.sh/index_fr)
 
 ```sh
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 ### [1password](https://1password.com/)
@@ -23,7 +23,7 @@
     op get document x24ofo3iw5eypnacl7yiqvjuiq > ~/.ssh/id_rsa.pub && \
     chmod 644 ~/.ssh/id_rsa.pub
     eval "$(ssh-agent -s)" && \
-    ssh-add -K ~/.ssh/id_rsas
+    ssh-add -K ~/.ssh/id_rsa
 ```
 
 ### PGP Key
@@ -37,7 +37,7 @@
 ### [chezmoi](https://github.com/twpayne/chezmoi)
 
 ```sh
-  brew install twpayne/taps/chezmoi && \
+  brew install chezmoi && \
     chezmoi init git@github.com:beauraF/setup.git
 ```
 
