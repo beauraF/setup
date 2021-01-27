@@ -112,12 +112,12 @@ fi
 
 # doctolib
 export HTTPS=1
+export CI_USE_LAMBDATEST="true"
+export CI_LAMBDATEST_URI="https://florent.beaurain:YSkNkx4QBEM8RPK8nlR36a7zz1iuPZvzWsyu7NOcrUPcH3bndt@hub.lambdatest.com/wd/hub"
+export LT_TUNNEL_BIN=~/Downloads/LT
 
 # nodenv
 eval "$(nodenv init -)"
-
-# pyenv
-eval "$(pyenv init -)"
 
 # rbenv
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY="YES"
