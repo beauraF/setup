@@ -7,7 +7,6 @@ yarn-error.log
 .env
 .git/
 .idea/
-.tool-versions
 
 *.log
 *.sql
